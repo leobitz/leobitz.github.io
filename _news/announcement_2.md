@@ -5,7 +5,7 @@ inline: true
 related_posts: false
 ---
 
-I will be attending the DLRL Summer School at [https://dlrl.ca/](CIFAR-MILA) in Montreal, CA from July 17th to 21st, 2023.
+I will be attending the DLRL Summer School at [MILA](https://dlrl.ca/) in Montreal, CA from July 17th to 21st, 2023.
 
 <!-- ***
 
