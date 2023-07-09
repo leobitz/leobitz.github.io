@@ -1,5 +1,4 @@
----
----
+
 
 
 @article{DynamicViT,
@@ -9,6 +8,7 @@
 	author = {Mersha, Amanuel and Assefa, Sammy},
 	month = Nov,
 	year = {2022},
+      selected = {true},
 	keywords = {transformer, layer skipping, dynamic neural network, efficient},
       preview = {lanerf.png},
       abstract = {Recent deep learning breakthroughs in language and vision tasks can be mainly attributed to large-scale transformers. Unfortunately, the massive size and high compute requirement of these models have limited their use in resource-constrained environments. Dynamic neural networks present a unique opportunity to reduce the amount of compute requirement as these models enable dynamically adjusting the computational path given an input. We propose a layer-skipping dynamic vision transformer (ViT) network that skips layers for each sample based on decisions given by a reinforcement learning agent. Extensive experiments on CIFAR-10 and CIFAR-100 showed that this dynamic ViT model gains an average of 40\% throughput increase in the inference phase when evaluated on different batch sizes ranging from 1 to 1024.},
@@ -21,6 +21,7 @@
 	author = {Mersha, Amanuel and  Wu, Stephen},
 	month = Nov,
 	year = {2022},
+      selected = {true},
 	keywords = {distillation, word-embedding},
       preview = {lanerf.png},
       abstract = {Word embeddings powered the early days of neural network-based NLP research. Their effectiveness in small data regimes makes them still relevant in low-resource environments. However, they are limited in two critical ways: linearly increasing memory requirements and out-of-vocabulary token handling. In this work, we present a distillation technique of word embeddings into a CNN network using contrastive learning. This method allows embeddings to be regressed given the characters of a token. It is then used as a pretrained layer, replacing word embeddings. Low-resource languages are the primary beneficiary of this method and hence, we show its effectiveness on two morphology-rich Semitic languages, and in a multilingual NER task comprised of 10 African languages. Apart from being data and memory efficient, the model significantly increases performance across several benchmarks and is capable of transferring word representations.},
@@ -46,6 +47,7 @@
 	author = {Mersha, Amanuel},
 	month = jul,
 	year = {2022},
+      selected = {true},
 	keywords = {distillation, word-embedding},
       preview = {lanerf.png},
       abstract = {The recent deep learning breakthroughs in language and vision tasks can be mainly attributed to large-scale transformers. Unfortunately, their massive size and high compute requirement have limited their use in resource-constrained environments. Dynamic neural networks could potentially reduce the amount of compute requirement by dynamically adjusting the computational path based on the input. Similar to soft attention, this work presents a simple way of constructing an oracle function that enables a transformer network to determine the dependency between its layers. It can then be used as a strategy to skip layers without a reinforcement learning agent. We show that such a model learns to skip, on average, half of its layers for each sample in a batch input.},  
