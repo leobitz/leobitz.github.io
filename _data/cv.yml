@@ -59,14 +59,14 @@
       year: Apr 2022 - July 2023
       description:
         - Developed a transformer network that employs a reinforcement learning (RL) agent to learn to skip irrelevant layers during processing an input, resulting in a 40% increase in throughput compared to the vanilla ViT
-      # link: https://github.com/leobitz/DynamicViT.git
+      link: https://github.com/leobitz/DynamicViT.git
 
     - title: DistillEmb - Distilling word-embeddings via contrastive learning
       institution: Addis Ababa University
       year: Jun 2021 - May 2023
       description:
         - Compressed word embeddings into a CNN to address out-of-vocabulary issues, conserve memory, and facilitate cross-lingual transfer, resulting in a 7% improvement in F1 accuracy and 1400% less memory usage, as well as out-of-the-box low resource cross-lingual transfer capabilities.
-      # link: https://github.com/leobitz/DistillEmb.git
+      link: https://github.com/leobitz/DistillEmb.git
 
     - title: Boosting image retrieval with accurately labeled small data
       institution: Addis Ababa University
