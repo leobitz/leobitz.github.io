@@ -124,7 +124,11 @@
             <!-- _pages/publications.md -->
 <div class="publications">
   <h2 class="year">2023</h2>
-  <ol class="bibliography"><li>
+  <ol class="bibliography"></ol>
+
+  <h2 class="year">2022</h2>
+  <ol class="bibliography">
+<li>
 <!-- _layouts/bib.html -->
       <div class="row">
         <div class="col-sm-2 preview">
@@ -142,33 +146,20 @@
 </div>
 
         <!-- Entry bib key -->
-        <div id="krishnan2023lane" class="col-sm-8">
+        <div id="DynamicViT" class="col-sm-8">
         <!-- Title -->
-        <div class="title">LANe: Lighting-Aware Neural Fields for Compositional Scene Synthesis</div>
+        <div class="title">DynamicViT: Making Vision Transformer faster through layer skipping</div>
         <!-- Author -->
         <div class="author">
         
 
-        Akshay Krishnan, Amit Raj, Xianling Zhang, and
-          <span class="more-authors" title="click to view 5 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '5 more authors' ? 'Alexandra Carlson, Nathan Tseng, Sandhya Sridhar, Nikita Jaipuria, James Hays' : '5 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">5 more authors</span>
-</div>
+        Amanuel Mersha, and Sammy Assefa</div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          2023
+          <em>Vision Transformers: Theory and Applications Workshop at NeurIPS 2022</em>, Nov 2022
         </div>
         <div class="periodical">
           
@@ -177,24 +168,134 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="http://arxiv.org/abs/https://arxiv.org/abs/2304.03280" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
-            <a href="https://lane-composition.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
           </div>
           
           <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-arxiv-id="2304.03280"></span>
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>Neural fields have recently enjoyed great success in representing and rendering 3D scenes. However, most state-of-the-art implicit representations model static or dynamic scenes as a whole, with minor variations. Existing work on learning disentangled world and object neural fields do not consider the problem of composing objects into different world neural fields in a lighting-aware manner. We present Lighting-Aware Neural Field (LANe) for the compositional synthesis of driving scenes in a physically consistent manner. Specifically, we learn a scene representation that disentangles the static background and transient elements into a world-NeRF and class-specific object-NeRFs to allow compositional synthesis of multiple objects in the scene. Furthermore, we explicitly designed both the world and object models to handle lighting variation, which allows us to compose objects into scenes with spatially varying lighting. This is achieved by constructing a light field of the scene and using it in conjunction with a learned shader to modulate the appearance of the object NeRFs. We demonstrate the performance of our model on a synthetic dataset of diverse lighting conditions rendered with the CARLA simulator, as well as a novel real-world dataset of cars collected at different times of the day. Our approach shows that it outperforms state-of-the-art compositional scene synthesis on the challenging dataset setup, via composing object-NeRFs learned from one scene into an entirely different scene whilst still respecting the lighting variations in the novel scene. For more results, please visit our project website https://lane-composition.github.io/.</p>
+            <p>Recent deep learning breakthroughs in language and vision tasks can be mainly attributed to large-scale transformers. Unfortunately, the massive size and high compute requirement of these models have limited their use in resource-constrained environments. Dynamic neural networks present a unique opportunity to reduce the amount of compute requirement as these models enable dynamically adjusting the computational path given an input. We propose a layer-skipping dynamic vision transformer (ViT) network that skips layers for each sample based on decisions given by a reinforcement learning agent. Extensive experiments on CIFAR-10 and CIFAR-100 showed that this dynamic ViT model gains an average of 40% throughput increase in the inference phase when evaluated on different batch sizes ranging from 1 to 1024.</p>
           </div>
         </div>
       </div>
-</li></ol>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 preview">
+<figure>
 
-  <h2 class="year">2022</h2>
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/publication_preview/lanerf.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="lanerf.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+</div>
+
+        <!-- Entry bib key -->
+        <div id="DistillEmb" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">DistillEmb: Distilling Word Embeddings via Contrastive Learning</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Amanuel Mersha, and Stephen Wu</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>Transfer Learning for NLP Workshop at NeurIPS 2022</em>, Nov 2022
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Word embeddings powered the early days of neural network-based NLP research. Their effectiveness in small data regimes makes them still relevant in low-resource environments. However, they are limited in two critical ways: linearly increasing memory requirements and out-of-vocabulary token handling. In this work, we present a distillation technique of word embeddings into a CNN network using contrastive learning. This method allows embeddings to be regressed given the characters of a token. It is then used as a pretrained layer, replacing word embeddings. Low-resource languages are the primary beneficiary of this method and hence, we show its effectiveness on two morphology-rich Semitic languages, and in a multilingual NER task comprised of 10 African languages. Apart from being data and memory efficient, the model significantly increases performance across several benchmarks and is capable of transferring word representations.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 preview">
+<figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/publication_preview/lanerf.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="lanerf.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+</div>
+
+        <!-- Entry bib key -->
+        <div id="DT" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Dynamic Transformer Network</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Amanuel Mersha</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>Workshop on Dynamic Neural Networks at ICML 2022</em>, Jul 2022
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>The recent deep learning breakthroughs in language and vision tasks can be mainly attributed to large-scale transformers. Unfortunately, their massive size and high compute requirement have limited their use in resource-constrained environments. Dynamic neural networks could potentially reduce the amount of compute requirement by dynamically adjusting the computational path based on the input. Similar to soft attention, this work presents a simple way of constructing an oracle function that enables a transformer network to determine the dependency between its layers. It can then be used as a strategy to skip layers without a reinforcement learning agent. We show that such a model learns to skip, on average, half of its layers for each sample in a batch input.</p>
+          </div>
+        </div>
+      </div>
+</li>
+</ol>
+
+  <h2 class="year">2021</h2>
+  <ol class="bibliography"></ol>
+
+  <h2 class="year">2020</h2>
   <ol class="bibliography">
 <li>
 <!-- _layouts/bib.html -->
@@ -206,7 +307,7 @@
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/simbar.gif" class="preview z-depth-1 rounded" width="auto" height="auto" alt="simbar.gif" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/publication_preview/lanerf.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="lanerf.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -214,33 +315,20 @@
 </div>
 
         <!-- Entry bib key -->
-        <div id="Zhang_2022_CVPR" class="col-sm-8">
+        <div id="morph" class="col-sm-8">
         <!-- Title -->
-        <div class="title">SIMBAR: Single Image-Based Scene Relighting for Effective Data Augmentation for Automated Driving Vision Tasks</div>
+        <div class="title">Morphology-rich Alphasyllabary Embeddings</div>
         <!-- Author -->
         <div class="author">
         
 
-        Xianling Zhang, Nathan Tseng, Ameerah Syed, and
-          <span class="more-authors" title="click to view 2 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '2 more authors' ? 'Rohan Bhasin, Nikita Jaipuria' : '2 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">2 more authors</span>
-</div>
+        Amanuel Mersha, and Stephen Wu</div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>In CVPR</em>, Jun 2022
+          <em>Proceedings of the 12^th Language Resources and Evaluation Conference</em>, Jan 2020
         </div>
         <div class="periodical">
           
@@ -249,8 +337,6 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="http://arxiv.org/abs/https://openaccess.thecvf.com/content/CVPR2022/html/Zhang_SIMBAR_Single_Image-Based_Scene_Relighting_for_Effective_Data_Augmentation_for_CVPR_2022_paper.html" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
-            <a href="https://simbarv1.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
           </div>
           
           <div class="badges">
@@ -260,7 +346,7 @@
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>Real-world autonomous driving datasets comprise of images aggregated from different drives on the road. The ability to relight captured scenes to unseen lighting conditions, in a controllable manner, presents an opportunity to augment datasets with a richer variety of lighting conditions, similar to what would be encountered in the real-world. This paper presents a novel image-based relighting pipeline, SIMBAR, that can work with a single image as input. To the best of our knowledge, there is no prior work on scene relighting leveraging explicit geometric representations from a single image. We present qualitative comparisons with prior multi-view scene relighting baselines. To further validate and effectively quantify the benefit of leveraging SIMBAR for data augmentation for automated driving vision tasks, object detection and tracking experiments are conducted with a state-of-the-art method, a Multiple Object Tracking Accuracy (MOTA) of 93.3% is achieved with CenterTrack on SIMBAR-augmented KITTI-an impressive 9.0% relative improvement over the baseline MOTA of 85.6% with CenterTrack on original KITTI, both models trained from scratch and tested on Virtual KITTI. For more details and SIMBAR relit datasets, please visit our project website (https://simbarv1.github.io/).</p>
+            <p>Word embeddings have been successfully trained in many languages. However, both intrinsic and extrinsic metrics are variable across languages, especially for languages that depart significantly from English in morphology and orthography. This study focuses on building a word embedding model suitable for the Semitic language of Amharic (Ethiopia), which is both morphologically rich and written as an alphasyllabary (abugida) rather than an alphabet. We compare embeddings from tailored neural models, simple pre-processing steps, off-the-shelf baselines, and parallel tasks on a better-resourced Semitic language – Arabic. Experiments show our model’s performance on word analogy tasks, illustrating the divergent objectives of morphological vs. semantic analogies.</p>
           </div>
         </div>
       </div>
@@ -275,7 +361,7 @@
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/deeppic.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="deeppic.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/publication_preview/lanerf.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="lanerf.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -283,33 +369,20 @@
 </div>
 
         <!-- Entry bib key -->
-        <div id="Jaipuria_2022_CVPR" class="col-sm-8">
+        <div id="tr-morph" class="col-sm-8">
         <!-- Title -->
-        <div class="title">deepPIC: Deep Perceptual Image Clustering for Identifying Bias in Vision Datasets</div>
+        <div class="title">A translation-based approach to morphology learning for low-resource languages</div>
         <!-- Author -->
         <div class="author">
         
 
-        Nikita Jaipuria, Katherine Stevo, Xianling Zhang, and
-          <span class="more-authors" title="click to view 4 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '4 more authors' ? 'Meghana L. Gaopande, Ian Calle, Jinesh Jain, Vidya N. Murali' : '4 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">4 more authors</span>
-</div>
+        Tewodros Gebresilasie, Amanuel Mersha, and Michael Gasser</div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>In CVPR</em>, Jun 2022
+          <em>Proceedings of The Fourth Widening Natural Language Processing Workshop</em>, Nov 2020
         </div>
         <div class="periodical">
           
@@ -318,8 +391,6 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="http://arxiv.org/abs/https://openaccess.thecvf.com/content/CVPR2022W/VDU/html/Jaipuria_deepPIC_Deep_Perceptual_Image_Clustering_for_Identifying_Bias_in_Vision_CVPRW_2022_paper.html" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
-            <a href="https://alchemz.github.io/unpuzzle_dataset_bias/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
           </div>
           
           <div class="badges">
@@ -329,174 +400,12 @@
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>Dataset bias in manually collected datasets is a known problem in computer vision. In safety-critical applications such as autonomous driving, these biases can lead to catastrophic errors from models trained on such datasets, jeopardizing the safety of users and their surroundings. Being able to unpuzzle the bias in a given dataset, and across datasets, is an essential tool for building safe and responsible AI. In this paper, we present deepPIC: deep Perceptual Image Clustering, a novel hierarchical clustering pipeline that leverages deep perceptual features to visualize and understand bias in unstructured and unlabeled datasets. It does so by effectively highlighting nuanced subcategories of information embedded within the data (such as multiple but repetitive shadow types) that typically are hard and/or expensive to annotate. Through experiments on a variety of image datasets, both open-source and internal, we demonstrate the effectiveness of deepPIC in (i) singling out errors in metadata from open-source datasets such as BDD100K;(ii) automatic nuanced metadata annotation;(iii) mining for edge cases;(iv) visualizing inherent bias both within and across multiple datasets; and (v) capturing synthetic data limitations; thus highlighting the wide variety of applications this pipeline can be applied to. All clustering results included here have been uploaded with image thumbnails on our project website-https://alchemz. github. io/unpuzzle_dataset_bias/. We recommend zooming in for best impact.</p>
+            <p>“Low resource languages” usually refers to languages that lack corpora and basic tools such as part-of-speech taggers. But a significant number of such languages do benefit from the availability of relatively complex linguistic descriptions of phonology, morphology, and syntax, as well as dictionaries. A further category, probably the majority of the world’s languages, suffers from the lack of even these resources. In this paper, we investigate the possibility of learning the morphology of such a language by relying on its close relationship to a language with more resources. Specifically, we use a transfer-based approach to learn the morphology of the severely under-resourced language Gofa, starting with a neural morphological generator for the closely related language, Wolaytta. Both languages are members of the Omotic family, spoken and southwestern Ethiopia, and, like other Omotic languages, both are morphologically complex. We first create a finite- state transducer for morphological analysis and generation for Wolaytta, based on relatively complete linguistic descriptions and lexicons for the language. Next, we train an encoder-decoder neural network on the task of morphological generation for Wolaytta, using data generated by the FST. Such a network takes a root and a set of grammatical features as input and generates a word form as output. We then elicit Gofa translations of a small set of Wolaytta words from bilingual speakers. Finally, we retrain the decoder of the Wolaytta network, using a small set of Gofa target words that are translations of the Wolaytta outputs of the original network. The evaluation shows that the transfer network performs better than a separate encoder-decoder network trained on a larger set of Gofa words. We conclude with implications for the learning of morphology for severely under-resourced languages in regions where there are related languages with more resources.</p>
           </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"></div>
-
-        <!-- Entry bib key -->
-        <div id="Litvak_Zhang_Jaipuria_Paudel_2022" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Neural network image processing</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Xianling Zhang, Artem Litvak, Nikita Jaipuria, and
-          <span class="more-authors" title="click to view 1 more author" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '1 more author' ? 'Shreyasha Paudel' : '1 more author';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">1 more author</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          Mar 2022
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          
         </div>
       </div>
 </li>
 </ol>
-
-  <h2 class="year">2021</h2>
-  <ol class="bibliography"><li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"></div>
-
-        <!-- Entry bib key -->
-        <div id="Mayar_Vidya_Zhang_2022" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Enhanced vehicle operation</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        </div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          Sep 2021
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          
-        </div>
-      </div>
-</li></ol>
-
-  <h2 class="year">2020</h2>
-  <ol class="bibliography"><li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 preview">
-<figure>
-
-  <picture>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/synthetic_aug.gif" class="preview z-depth-1 rounded" width="auto" height="auto" alt="synthetic_aug.gif" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-</div>
-
-        <!-- Entry bib key -->
-        <div id="Jaipuria_2020_CVPR_Workshops" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Deflating Dataset Bias Using Synthetic Data Augmentation</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Nikita Jaipuria, Xianling Zhang, Rohan Bhasin, and
-          <span class="more-authors" title="click to view 5 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '5 more authors' ? 'Mayar Arafa, Punarjay Chakravarty, Shubham Shrivastava, Sagar Manglani, Vidya N. Murali' : '5 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">5 more authors</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops</em>, Jun 2020
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="http://arxiv.org/abs/https://openaccess.thecvf.com/content_CVPRW_2020/html/w45/Jaipuria_Deflating_Dataset_Bias_Using_Synthetic_Data_Augmentation_CVPRW_2020_paper.html" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
-            <a href="https://openaccess.thecvf.com/content_CVPRW_2020/supplemental/Jaipuria_Deflating_Dataset_Bias_CVPRW_2020_supplemental.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Deep Learning has seen an unprecedented increase in vision applications since the publication of large-scale object recognition datasets and introduction of scalable compute hardware. State-of-the-art methods for most vision tasks for Autonomous Vehicles (AVs) rely on supervised learning and often fail to generalize to domain shifts and/or outliers. Dataset diversity is thus key to successful real-world deployment. No matter how big the size of the dataset, capturing long tails of the distribution pertaining to task-specific environmental factors is impractical. The goal of this paper is to investigate the use of targeted synthetic data augmentation - combining the benefits of gaming engine simulations and sim2real style transfer techniques - for filling gaps in real datasets for vision tasks. Empirical studies on three different computer vision tasks of practical use to AVs - parking slot detection, lane detection and monocular depth estimation - consistently show that having synthetic data in the training mix provides a significant boost in cross-dataset generalization performance as compared to training on real data only, for the same size of the training set.</p>
-          </div>
-        </div>
-      </div>
-</li></ol>
 
 
 </div>
