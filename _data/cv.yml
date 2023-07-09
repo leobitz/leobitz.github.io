@@ -89,9 +89,11 @@
 - title: Open Source Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Urban Land Usage Optimization Using NSGA II - <a href="https://github.com/leobitz/fun_with_optimization">Jupyter Notebook</a>
+      # year: 2015-now
+      # description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: ROS and Gazebo-based Delta-3 robot model - <a href="https://github.com/leobitz/delta3_gazebo">GitHub</a>
+    - title: Genetic Algorithm based classroom timetable generator - <a href="https://github.com/leobitz/timetable-scheduler">GitHub</a>
 
 # - title: Honors and Awards
 #   type: time_table
