@@ -46,7 +46,7 @@
 
     - title: RoboCup Developer
       institution: Addis Ababa University
-      year: 1911 - 1917
+      year: Apr 2017 - Sept 2018
       description:
         - Built a ROS-based RoboCup Platform
 
@@ -56,7 +56,7 @@
   contents:
     - title: DynamicViT - Making Vision Transformer faster by skipping layers
       institution: Addis Ababa University
-      year: Apr 2022 - Present
+      year: Apr 2022 - July 2023
       description:
         - Developed a transformer network that employs a reinforcement learning (RL) agent to learn to skip irrelevant layers during processing an input, resulting in a 40% increase in throughput compared to the vanilla ViT
       # link: https://github.com/leobitz/DynamicViT.git
@@ -82,11 +82,9 @@
 
     - title: Morphology-rich alphasyllabary embeddings
       institution: Addis Ababa University
-      year: Apr 2018 -- Jun 2019
+      year: Apr 2018 - Jun 2019
       description:
         - Examined the relationship between language morphology and corresponding word embeddings, proposing a technique to enhance the syntactic features of embeddings
-
-
 
 - title: Open Source Projects
   type: time_table
@@ -121,4 +119,4 @@
 - title: Other Interests
   type: list
   contents:
-    - Gaming, Basketball, 
+    - Gaming, Basketball, Hiking, Traveling
