@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   address: 
-    <p> Ford Greenfield Labs, building b</p>
+    <p>Addis Ababa Institute of Technology</p>
     <p>King George St, 5 Kilo</p>
     <p>Addis Ababa, Ethiopia</p>
 

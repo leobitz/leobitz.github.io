@@ -10,7 +10,7 @@
 	year = {2022},
       selected = {true},
 	keywords = {transformer, layer skipping, dynamic neural network, efficient},
-      preview = {lanerf.png},
+      preview = {dyna.jpg},
       abstract = {Recent deep learning breakthroughs in language and vision tasks can be mainly attributed to large-scale transformers. Unfortunately, the massive size and high compute requirement of these models have limited their use in resource-constrained environments. Dynamic neural networks present a unique opportunity to reduce the amount of compute requirement as these models enable dynamically adjusting the computational path given an input. We propose a layer-skipping dynamic vision transformer (ViT) network that skips layers for each sample based on decisions given by a reinforcement learning agent. Extensive experiments on CIFAR-10 and CIFAR-100 showed that this dynamic ViT model gains an average of 40\% throughput increase in the inference phase when evaluated on different batch sizes ranging from 1 to 1024.},
 }
 
@@ -23,7 +23,7 @@
 	year = {2022},
       selected = {true},
 	keywords = {distillation, word-embedding},
-      preview = {lanerf.png},
+      preview = {distill-emb.png},
       abstract = {Word embeddings powered the early days of neural network-based NLP research. Their effectiveness in small data regimes makes them still relevant in low-resource environments. However, they are limited in two critical ways: linearly increasing memory requirements and out-of-vocabulary token handling. In this work, we present a distillation technique of word embeddings into a CNN network using contrastive learning. This method allows embeddings to be regressed given the characters of a token. It is then used as a pretrained layer, replacing word embeddings. Low-resource languages are the primary beneficiary of this method and hence, we show its effectiveness on two morphology-rich Semitic languages, and in a multilingual NER task comprised of 10 African languages. Apart from being data and memory efficient, the model significantly increases performance across several benchmarks and is capable of transferring word representations.},
       
 }
@@ -35,7 +35,7 @@
 	author = {Mersha, Amanuel and  Wu, Stephen},
 	month = jan,
 	year = {2020},
-      preview = {lanerf.png},
+      preview = {morph.png},
       abstract = {Word embeddings have been successfully trained in many languages. However, both intrinsic and extrinsic metrics are variable across languages, especially for languages that depart significantly from English in morphology and orthography. This study focuses on building a word embedding model suitable for the Semitic language of Amharic (Ethiopia), which is both morphologically rich and written as an alphasyllabary (abugida) rather than an alphabet. We compare embeddings from tailored neural models, simple pre-processing steps, off-the-shelf baselines, and parallel tasks on a better-resourced Semitic language – Arabic. Experiments show our model’s performance on word analogy tasks, illustrating the divergent objectives of morphological vs. semantic analogies.},
       
 }
@@ -49,7 +49,7 @@
 	year = {2022},
       selected = {true},
 	keywords = {distillation, word-embedding},
-      preview = {lanerf.png},
+      preview = {wsdc-right.png},
       abstract = {The recent deep learning breakthroughs in language and vision tasks can be mainly attributed to large-scale transformers. Unfortunately, their massive size and high compute requirement have limited their use in resource-constrained environments. Dynamic neural networks could potentially reduce the amount of compute requirement by dynamically adjusting the computational path based on the input. Similar to soft attention, this work presents a simple way of constructing an oracle function that enables a transformer network to determine the dependency between its layers. It can then be used as a strategy to skip layers without a reinforcement learning agent. We show that such a model learns to skip, on average, half of its layers for each sample in a batch input.},  
 }
 
@@ -64,7 +64,6 @@
 	month = nov,
 	year = {2020},
 	keywords = {distillation, word-embedding},
-      preview = {lanerf.png},
       abstract = {“Low resource languages” usually refers to languages that lack corpora and basic tools such as part-of-speech taggers. But a significant number of such languages do benefit from the availability of relatively complex linguistic descriptions of phonology, morphology, and syntax, as well as dictionaries. A further category, probably the majority of the world’s languages, suffers from the lack of even these resources. In this paper, we investigate the possibility of learning the morphology of such a language by relying on its close relationship to a language with more resources. Specifically, we use a transfer-based approach to learn the morphology of the severely under-resourced language Gofa, starting with a neural morphological generator for the closely related language, Wolaytta. Both languages are members of the Omotic family, spoken and southwestern Ethiopia, and, like other Omotic languages, both are morphologically complex. We first create a finite- state transducer for morphological analysis and generation for Wolaytta, based on relatively complete linguistic descriptions and lexicons for the language. Next, we train an encoder-decoder neural network on the task of morphological generation for Wolaytta, using data generated by the FST. Such a network takes a root and a set of grammatical features as input and generates a word form as output. We then elicit Gofa translations of a small set of Wolaytta words from bilingual speakers. Finally, we retrain the decoder of the Wolaytta network, using a small set of Gofa target words that are translations of the Wolaytta outputs of the original network. The evaluation shows that the transfer network performs better than a separate encoder-decoder network trained on a larger set of Gofa words. We conclude with implications for the learning of morphology for severely under-resourced languages in regions where there are related languages with more resources.},
       
 }
