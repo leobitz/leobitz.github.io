@@ -54,21 +54,21 @@
 - title: Research Experience
   type: time_table
   contents:
-    - title: DynamicViT - Making Vision Transformer faster by skipping layers
+    - title: DynamicViT - Making Vision Transformer faster by skipping layers - <a href="https://github.com/leobitz/DynamicViT">GitHub</a>
       institution: Addis Ababa University
       year: Apr 2022 - July 2023
       description:
         - Developed a transformer network that employs a reinforcement learning (RL) agent to learn to skip irrelevant layers during processing an input, resulting in a 40% increase in throughput compared to the vanilla ViT
       link: https://github.com/leobitz/DynamicViT.git
 
-    - title: DistillEmb - Distilling word-embeddings via contrastive learning
+    - title: DistillEmb - Distilling word-embeddings via contrastive learning - <a href="https://github.com/leobitz/DistillEmb">GitHub</a>
       institution: Addis Ababa University
       year: Jun 2021 - May 2023
       description:
         - Compressed word embeddings into a CNN to address out-of-vocabulary issues, conserve memory, and facilitate cross-lingual transfer, resulting in a 7% improvement in F1 accuracy and 1400% less memory usage, as well as out-of-the-box low resource cross-lingual transfer capabilities.
       link: https://github.com/leobitz/DistillEmb.git
 
-    - title: Boosting image retrieval with accurately labeled small data
+    - title: Boosting image retrieval with accurately labeled small data - <a href="https://github.com/leobitz/boosting_image_retrieval">GitHub</a>
       institution: Addis Ababa University
       year: Sept 2021 - Jan 2022
       description: 
@@ -80,7 +80,7 @@
       description:
         - Constructed a CNN-based encoder-decoder morphological analyzer for Wolayita language utilizing fewer parameters than LSTM-based models
 
-    - title: Morphology-rich alphasyllabary embeddings
+    - title: Morphology-rich alphasyllabary embeddings - <a href="https://github.com/leobitz/amharic_word_embeddings">GitHub</a>
       institution: Addis Ababa University
       year: Apr 2018 - Jun 2019
       description:
@@ -104,17 +104,17 @@
 #       items: 
 #         - Max Planck Medal
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
+# - title: Academic Interests
+#   type: nested_list
+#   contents:
+#     - title: Topic 1.
+#       items: 
+#         - Description 1.
+#         - Description 2.
+#     - title: Topic 2.
+#       items:
+#         - Description 1.
+#         - Description 2.
 
 - title: Other Interests
   type: list
