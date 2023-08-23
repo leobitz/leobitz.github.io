@@ -18,12 +18,14 @@ latest_posts: false  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
-Amanuel Negash Mersha is a Machine Learning Researcher and Lecturer at Addis Ababa University, Addis Ababa, Ethiopia. He is broadly interested robust deep learning models that are efficient, robust under distribution shift and continue to acquire new knowledge. 
+I recently graduated with a Master of Science in Artificial Intelligence from Addis Ababa University. I am broadly interested in deep learning models that are efficient, robust to distribution shift, and able to acquire new knowledge over time. These concepts are essential for all subfields of learning systems, such as natural language processing, computer vision, and robotics. Therefore, I am interested in the foundational concepts of all of these domains. I also enjoy developing products, and I have participated in several machine learning projects where I have built robust AI systems.
 
-My research interests include 
+My research interest includes: 
+
 - Efficient Deep Neural Networks
-- RL based meta-learning on deep leaning models
-- Out-of-distribution Generalization
+- RL based meta-learning for deep leaning models
+- Out of distribution generalization
+
 <!-- -  -->
 
 
