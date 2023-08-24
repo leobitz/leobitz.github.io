@@ -44,3 +44,5 @@ Each image will have multiple labels. For example, in an e-commerce application,
 The following sample shows the performance of an embedding. The task is extracting the top 10 images similar to the first image. The vanilla pre-trained ViT model got the 9th image only. Our method only missed two. 
 
 ![shallow model](https://github.com/leobitz/boosting_image_retrieval/blob/main/sample.png?raw=true)
+
+Code: ![https://github.com/leobitz/boosting_image_retrieval](https://github.com/leobitz/boosting_image_retrieval)

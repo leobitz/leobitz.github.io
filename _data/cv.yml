@@ -117,7 +117,13 @@
 #       items:
 #         - Description 1.
 #         - Description 2.
-
+- title: Skills
+  type: list
+  contents:
+    - Deep Learning, NLP, Computer Vision, Research
+    - C#, Python, Java, C++, JavaScript, TypeScript, Kotlin
+    - AspNet Core, ExpressJS, Django, Flask
+    - TensorFlow, PyTorch
 - title: Other Interests
   type: list
   contents:
