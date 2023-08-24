@@ -2,7 +2,7 @@
 layout: page
 title: Boosting image retrieval with accurately labeled small data
 description: The project investigates how multi-labeling images with detailed information would boost representation in an image retrieval task, thereby lowering compute need significantly.
-img: assets/img/proj-boosting.png.jpg
+img: assets/img/proj-boosting.png
 importance: 1
 category: work
 ---
@@ -19,7 +19,7 @@ Each image will have multiple labels. For example, in an e-commerce application,
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/proj-boosting.png.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/proj-boosting.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
