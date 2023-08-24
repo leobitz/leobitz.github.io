@@ -1,80 +1,46 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: assets/img/12.jpg
+title: Boosting image retrieval with accurately labeled small data
+description: The project investigates how multi-labeling images with detailed information would boost representation in an image retrieval task, thereby lowering compute need significantly.
+img: assets/img/proj-boosting.png.jpg
 importance: 1
 category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+**Abstract:** Image retrieval is an application of computer vision that, given an image, a system returns a set of images with similar content. Through the advancement of deep learning in recent years, image retrieval has gotten a significant boost in performance. However, such success is apparent through training deep models using massive amounts of data, incurring significant costs on compute and labeling. Several works investigated if feature vectors extracted from deep models can be used for image retrieval tasks, while others fine-tuned the deep models for better performance. In this work, we examine if detailed annotation of small sets of images can be used to induce more semantic information into the feature vectors through a simple shallow network with just 3k training data. We show that this simple technique can improve the richness of feature vectors extracted both from shallow models such as PCA and deep models such as ResNet and Vision Transformer. 
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Typically, the representation of an image might be extracted from a deep learning model such as ResNet-18, ResNet-50, or ViT-B/16. This representation's quality mostly depends on the model size and the data it was trained on. Such representation embedding is extracted from the last layer (input to the classifier) of an image and using KNN or other techniques can be used to search for images that are similar to the current one.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+*The question is, can we improve this representation so that our search algorithm becomes more accurate?*
+
+Each image will have multiple labels. For example, in an e-commerce application, a shirt might have attributes such as color, shape (V-shape, O-shape), size (L, M, X, XL), season (winter, summer), and more. These detailed labels can be used to boost the representation embedding of that image. 
+
+**Method:** Have a simple shallow network that takes the embedding of an image, and trains it so that it predicts each attribute in a multi-task fashion. Typically, in our model case, the network is a one-hidden layer feed-forward network. In this task, we used detailed labeling of 3k images. In the inference phase, while searching for similar images, instead of using the original embedding of an image, take the representation of the first layer of the shallow network.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/proj-boosting.png.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
+**Result:** We tested the technique on various models starting from PCA, ResNet-18, ResNet-34, ResNet-50, ResNet-101, and ViT-B/16. First, we tested the performance of the raw embeddings from these models. Then we applied the shallow network on the embeddings and evaluated them. The ground truth is the similarity based on the labels provided with the dataset. Using that as a reference, we computed the mean average precision (mAP) of the raw and the boosted embeddings. The following table shows the two evaluations.
 
+| Model | Raw | Ours |
+| ------ | ---| -----|
+|PCA | 5.99 | 6.09 | 
+|Resnet18 | 10.34 | 13.05 | 
+|Resnet34 | 9.9 | 12.04 | 
+|Resnet50 | 10.04 | 13.26 | 
+|Resnet101 | 11.05 | 14.9 | 
+|ViT-B/16 | 12.08 | 16.24 | 
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+**Takeaways:**
+- Have detailed labels for some images and even a small model with a shallow network performs much better than a larger one. 
 
+- The deployment cost will be very small
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+- Example: As ResNet-18 is much cheaper than the ViT-B/16 model, instead of having the cost of running ViT-B/16, investing in detailed labeling of small data and fine-tuning ResNet-18 is much better in the long run. 
 
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
+The following sample shows the performance of an embedding. The task is extracting the top 10 images similar to the first image. The vanilla pre-trained ViT model got the 9th image only. Our method only missed two. 
+
+![shallow model](https://github.com/leobitz/boosting_image_retrieval/blob/main/sample.png?raw=true)
