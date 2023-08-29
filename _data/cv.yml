@@ -120,19 +120,19 @@
 - title: Skills
   type: list
   contents:
-    - Research: Deep Learning, NLP, Computer Vision, Research
-    - Languages: Python, Java, C++, JavaScript, TypeScript, Kotlin, C#, C/C++
-    - Frameworks: AspNet Core, ExpressJS, Django, Flask, Android
-    - Web Frameworks: Angular, ReactJS, SvelteKit.
-    - ML Tools: TensorFlow, PyTorch, Keras, Numpy, Pandas, SciKit Learn, MLFlow, AutoML, SciPy
-    - Database: MySQL, MS SQL Server, MongoDB, PostgreSQL, VectorDB, Redis 
+    Research: Deep Learning, NLP, Computer Vision, Research
+    Languages: Python, Java, C++, JavaScript, TypeScript, Kotlin, C#, C/C++
+    Frameworks: AspNet Core, ExpressJS, Django, Flask, Android
+    Web Frameworks: Angular, ReactJS, SvelteKit.
+    ML Tools: TensorFlow, PyTorch, Keras, Numpy, Pandas, SciKit Learn, MLFlow, AutoML, SciPy
+    Database: MySQL, MS SQL Server, MongoDB, PostgreSQL, VectorDB, Redis 
   
 - title: Leadership and Volunteer Activities
   type: time_table
   contents:
     - title: Student Volunteer 
       institution: ICCV 2023
-      year: 2023
+      year: Oct 2023
       # description:
       #   - Thesis - RL based Dynamic Transformer Networks for efficient inference.
 
