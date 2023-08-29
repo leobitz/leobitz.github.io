@@ -121,24 +121,30 @@
   type: list
   contents:
     - name: Research
-    - value: Deep Learning, NLP, Computer Vision, Reinforcement Learning
+      value: Deep Learning, NLP, Computer Vision, Reinforcement Learning
     - name: Languages
-    - value: Python, Java, C++, JavaScript, TypeScript, Kotlin, C#
+      value: Python, Java, C++, JavaScript, TypeScript, Kotlin, C#
     - name: ML Tools
-    - value: TensorFlow, PyTorch, Keras, Numpy, Pandas, SciKit Learn, MLFlow, AutoML, SciPy, VectorDB
+      value: TensorFlow, PyTorch, Keras, Numpy, Pandas, SciKit Learn, MLFlow, AutoML, SciPy, VectorDB
     - name: Backend Frameworks
-    - value: AspNet Core, ExpressJS, Django, Flask, Android
+      value: AspNet Core, ExpressJS, Django, Flask, Android
     - name: Web Frameworks
-    - value: Angular, ReactJS, SvelteKit
+      value: Angular, ReactJS, SvelteKit
     - name: Database
-    - value: MySQL, MS SQL Server, MongoDB, PostgreSQL, Redis 
+      value: MySQL, MS SQL Server, MongoDB, PostgreSQL, Redis 
   
 - title: Leadership and Volunteer Activities
   type: time_table
   contents:
-    - title: ICCV Student Volunteer 
+    - title: ICCV Student Volunteer - Paris
       institution: International Conference on Computer Vision (ICCV) 2023
       year: Oct 2023
+    - title: ICLR Student Volunteer - Kigali
+      institution: International Conference on Learning Representation (ICLR) 2023
+      year: May 2023
+    - title: ICLR Student Volunteer - Kigali
+      institution: International Conference on Learning Representation (ICLR) 2023
+      year: May 2023
       # description:
       #   - Thesis - RL based Dynamic Transformer Networks for efficient inference.
 
