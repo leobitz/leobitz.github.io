@@ -118,7 +118,7 @@
 #         - Description 1.
 #         - Description 2.
 - title: Skills
-  type: list
+  type: map
   contents:
     - name: Research
       value: Deep Learning, NLP, Computer Vision, Reinforcement Learning
@@ -136,15 +136,18 @@
 - title: Leadership and Volunteer Activities
   type: time_table
   contents:
-    - title: ICCV Student Volunteer - Paris
+    - title: ICCV Student Volunteer
       institution: International Conference on Computer Vision (ICCV) 2023
       year: Oct 2023
-    - title: ICLR Student Volunteer - Kigali
+      location: Paris, France
+    - title: ICLR Student Volunteer
       institution: International Conference on Learning Representation (ICLR) 2023
       year: May 2023
-    - title: ICLR Student Volunteer - Kigali
-      institution: International Conference on Learning Representation (ICLR) 2023
+      location: Kigali, Rwanda
+    - title: Program Chair 
+      institution: Deep Learning IndabaX ASTU Conference
       year: May 2023
+      location: Adama, Ethiopia
       # description:
       #   - Thesis - RL based Dynamic Transformer Networks for efficient inference.
 
