@@ -137,17 +137,23 @@
   type: time_table
   contents:
     - title: ICCV Student Volunteer
-      institution: International Conference on Computer Vision (ICCV) 2023
+      institution: International Conference on Computer Vision (ICCV) 2023 - Paris, France
       year: Oct 2023
-      location: Paris, France
     - title: ICLR Student Volunteer
-      institution: International Conference on Learning Representation (ICLR) 2023
+      institution: International Conference on Learning Representation (ICLR) 2023 - Kigali, Rwanda
       year: May 2023
-      location: Kigali, Rwanda
     - title: Program Chair 
-      institution: Deep Learning IndabaX ASTU Conference
-      year: May 2023
-      location: Adama, Ethiopia
+      institution: Deep Learning IndabaX ASTU Conference - Adama, Ethiopia
+      year: Jan 2022
+    - title: Ambassador of Ethiopia 
+      institution: Zindi Africa - Addis Ababa, Ethiopia
+      year: Oct 2021
+    - title: General Co-Chair
+      institution: AI in Ethiopia Conference- Addis Ababa, Ethiopia
+      year: Oct 2019
+    - title: Tutorial Chair
+      institution: Deep Learning IndabaX WSU Conference - Wolaita Sodo, Ethiopia
+      year: May 2019
       # description:
       #   - Thesis - RL based Dynamic Transformer Networks for efficient inference.
 
