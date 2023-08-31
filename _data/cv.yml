@@ -2,11 +2,13 @@
   type: map
   contents:
     - name: Full Name
-      value: Amanuel N Mersha
+      value: Amanuel Mersha
     # - name: Date of Birth
     #   value: 24th Jan 1993
     - name: Languages
       value: English, Amharic
+    - name: Email
+      value: mersha.aman@gmail.com
 
 - title: Education
   type: time_table
@@ -106,34 +108,21 @@
 #       items: 
 #         - Max Planck Medal
 
-# - title: Academic Interests
-#   type: nested_list
-#   contents:
-#     - title: Topic 1.
-#       items: 
-#         - Description 1.
-#         - Description 2.
-#     - title: Topic 2.
-#       items:
-#         - Description 1.
-#         - Description 2.
 - title: Skills
   type: map
   contents:
-    - name: Research
+    - name: Softskills
       value: Deep Learning, NLP, Computer Vision, Reinforcement Learning
     - name: Languages
       value: Python, Java, C++, JavaScript, TypeScript, Kotlin, C#
     - name: ML Tools
       value: TensorFlow, PyTorch, Keras, Numpy, Pandas, SciKit Learn, MLFlow, AutoML, SciPy, VectorDB
-    - name: Backend Frameworks
-      value: AspNet Core, ExpressJS, Django, Flask, Android
-    - name: Web Frameworks
-      value: Angular, ReactJS, SvelteKit
+    - name: Application Frameworks
+      value: Angular, ReactJS, SvelteKit, AspNet Core, ExpressJS, Django, Flask, Android, ReactNative
     - name: Database
       value: MySQL, MS SQL Server, MongoDB, PostgreSQL, Redis 
   
-- title: Leadership and Volunteer Activities
+- title: Leadership and Volunteering Activities
   type: time_table
   contents:
     - title: ICCV Student Volunteer
@@ -149,19 +138,23 @@
       institution: Zindi Africa - Addis Ababa, Ethiopia
       year: Oct 2021
     - title: General Co-Chair
-      institution: AI in Ethiopia Conference- Addis Ababa, Ethiopia
+      institution: AI in Ethiopia Conference - Addis Ababa, Ethiopia
       year: Oct 2019
     - title: Tutorial Chair
       institution: Deep Learning IndabaX WSU Conference - Wolaita Sodo, Ethiopia
       year: May 2019
-      # description:
-      #   - Thesis - RL based Dynamic Transformer Networks for efficient inference.
 
-    # - title: B.Sc. in Software Engineering
-    #   institution: Addis Ababa University, Addis Ababa, Ethiopia
-    #   year: 2016
-    #   description:
-    #     - Thesis - Dynamic Transformer Networks for faster inference.
+- title: Academic Interests
+  type: nested_list
+  contents:
+    - title: Logic Based Representation Learning
+      items: 
+        - Description 1.
+        - Description 2.
+    - title: Topic 2.
+      items:
+        - Description 1.
+        - Description 2.
 - title: Other Interests
   type: list
   contents:
