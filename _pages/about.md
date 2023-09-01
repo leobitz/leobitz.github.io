@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Lecturer at School of Information Technology and Engineering, Addis Ababa Institute of Technology.
+subtitle: A passionate AI/ML Researcher and Engineer. Currently serving as a Lecturer at School of Information Technology and Engineering, Addis Ababa Institute of Technology, Ethiopia.
 
 profile:
   align: right
