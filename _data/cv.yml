@@ -28,21 +28,21 @@
 - title: Work Experience
   type: time_table
   contents:
-    - title: Senior Software Engineer
+    - title: Software Engineer
       institution: Bisrate Gabriel International School
       year: Sept 2021 - Present
       description:
         - Lead a development team
         - Design System Architecture
         
-    - title: Software Engineer & Lecturer
+    - title: Research & Lecturer
       institution: Addis Ababa University
       year: Sept 2016 - Present
       description:
         - Teach courses - Intro to AI, Intro to Algorithm and Data Structure.
         - Develop software products for the university 
 
-    - title: Founder & Software Engineer
+    - title: Founder
       institution: Sefere App
       year: Sept 2021 - Present
 
@@ -112,15 +112,21 @@
   type: map
   contents:
     - name: Softskills
-      value: Deep Learning, NLP, Computer Vision, Reinforcement Learning
+      value: Problem-solving, Teamwork, Communication skills, Attention to detail, Curiosity \& Adaptability
+    - name: Major ML Areas
+      value: Deep Learning, Information Retrieval, Image Retrieval, Computer Vision, Language Models, Sequence Modeling, Reinforcement Learning, Image Processing, Prompt Engineering, Robotics, NLP, Boosting, Bayesian Optimization, ML Debugging, Feature Engineering, Data Cleaning \& Pre-processing
     - name: Languages
-      value: Python, Java, C++, JavaScript, TypeScript, Kotlin, C#
+      value: Python, C/C++, Java, C#, Kotlin, JavaScript, TypeScript, Julia
+    - name: ML Frameworks
+      value: PyTorch, TensorFlow, Keras, TensorFlow.Js, Lightning, Sci-kit Learn, Pandas, Gensim, VectorDB, MLFlow, AutoML, SciPy, ONNX, OpenCV, NLTK, SpaCy
     - name: ML Tools
-      value: TensorFlow, PyTorch, Keras, Numpy, Pandas, SciKit Learn, MLFlow, AutoML, SciPy, VectorDB
+      value: TensorBoard, Weight \& Biases, Matplotlib, Seaborn, Bokeh, Google Cloud Platform (GCP), ROS, Gazebo
     - name: Application Frameworks
-      value: Angular, ReactJS, SvelteKit, AspNet Core, ExpressJS, Django, Flask, Android, ReactNative
+      value: Angular, ReactJs, AspNet Core, NodeJs, Django, Flask, FastAPI, Android, ReactNative
     - name: Database
-      value: MySQL, MS SQL Server, MongoDB, PostgreSQL, Redis 
+      value: MySQL, MS SQL Server, MongoDB, PostgreSQL, Redis, NoSQL 
+    - name: Software Engineering
+      value: Git, Docker, Github Action, CI/CD, MLOps, DevOps, GraphQL, REST, GraphQL, gRPC, Testing, OOP, Architecture Design, Distributed & Parallel Computing
   
 - title: Leadership and Volunteering Activities
   type: time_table
