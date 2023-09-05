@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>projects | Amanuel Mersha</title>
+    <title>Simple Scientific Q&amp;A Chatbot | Amanuel Mersha</title>
     <meta name="author" content="Amanuel Negash Mersha">
-    <meta name="description" content="A growing collection of your cool projects.">
+    <meta name="description" content="A powerful tool designed to navigate the vast world of scientific literature and provide concise and accurate answers to your science-related questions.">
     <meta name="keywords" content="amanuel negash mersha, academic-website, portfolio-website">
 
 
@@ -38,7 +38,7 @@
     <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://leobitz.github.io/projects/">
+    <link rel="canonical" href="https://leobitz.github.io/projects/scientific_chatbot/">
 
     <!-- Dark Mode -->
     
@@ -81,8 +81,8 @@
               <li class="nav-item ">
                 <a class="nav-link" href="/publications/">publications</a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="/projects/">projects<span class="sr-only">(current)</span></a>
+              <li class="nav-item ">
+                <a class="nav-link" href="/projects/">projects</a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link" href="/cv/">cv</a>
@@ -116,75 +116,91 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">projects</h1>
-            <p class="post-description">A growing collection of your cool projects.</p>
+            <h1 class="post-title">Simple Scientific Q&amp;A Chatbot</h1>
+            <p class="post-description">A powerful tool designed to navigate the vast world of scientific literature and provide concise and accurate answers to your science-related questions.</p>
           </header>
 
           <article>
-            <!-- pages/projects.md -->
-<div class="projects">
-  <!-- Display categorized projects -->
-  <h2 class="category">work</h2>
-  <!-- Generate cards for each project -->
-  <div class="grid">
-<!-- _includes/projects.html -->
-<div class="grid-sizer"></div>
-<div class="grid-item">
-  <a href="/projects/boosting_image_retrieval/">
-      <div class="card hoverable">
-<figure>
+            <p><strong>Abstract:</strong> A powerful tool designed to navigate the vast world of scientific literature and provide concise and accurate answers to your science-related questions. This chatbot is equipped with  a document summarizer, a fast retrieval mechanism, question answerer, and a context rephrasing model. With access to the extensive Pubmed Scientific Dataset and the potential for future fine-tuning on real scientific conversations, this chatbot is a valuable resource for anyone seeking scientific knowledge. Its adaptable hyperparameters allow for customization to suit your specific needs, whether you want detailed explanations or quick answers.</p>
 
-  <picture>
-    
+<p>Demo: <a href="https://github.com/leobitz/science-chatbot/blob/main/demo.ipynb" rel="external nofollow noopener" target="_blank">Jupyter Notebok</a>
+Project: <a href="https://github.com/leobitz/science-chatbot.git" rel="external nofollow noopener" target="_blank">Github Link</a></p>
 
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/proj-boosting.png" width="auto" height="auto" alt="project thumbnail" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+<p>You can use Docker or just run <em>prepare.sh</em> to handle all the dependency issues.</p>
 
-  </picture>
+<h2 id="architecture">Architecture</h2>
 
-</figure>
+<p>The architecture includes the following major components:</p>
 
-        <div class="card-body">
-          <h2 class="card-title text-lowercase">Boosting image retrieval with accurately labeled small data</h2>
-          <p class="card-text">The project investigates how multi-labeling images with detailed information would boost representation in an image retrieval task, thereby lowering the compute cost significantly.</p>
-          <div class="row ml-1 mr-1 p-0">
-          </div>
-        </div>
-      </div>
-    </a>
-</div>
-<!-- _includes/projects.html -->
-<div class="grid-sizer"></div>
-<div class="grid-item">
-  <a href="/projects/scientific_chatbot/">
-      <div class="card hoverable">
-<figure>
+<ul>
+  <li>
+<strong>Document Encoder</strong> - Documents have different sizes and each document can be represented with a fixed-size vector. I used two options
+    <ul>
+      <li>BERT Summarizer: Summarize any text to a fixed token size text (256) and apply sentence encoder (BERT-Sentence Encoder)</li>
+      <li>Chunking: Apply the BERT sentence encoder on fixed-size chunks of the document and finally average them to get the final fixed-size representation</li>
+    </ul>
+  </li>
+</ul>
 
-  <picture>
-    
+<p>Chunking is faster since it’s easier to process short-length documents than long sizes in Transformers</p>
 
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/chatbot.jpg" width="auto" height="auto" alt="project thumbnail" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+<ul>
+  <li>
+<strong>Document Retrieval -</strong> Given a question, a search operation is applied to the corpus to find the right context. I implemented two methods
+    <ul>
+      <li>
+<strong>Linear Search -</strong> on the document vector space. Very slow</li>
+      <li>
+<strong>Hierarchical Search</strong> - Using Topic2Vec, we can build a tree and search on clusters rather than search on an array</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Question Answerer -</strong> Once the right context is found, a seq2seq model can be fed the question and the context. It will produce the answer.</p>
+  </li>
+  <li>
+<strong>Rephraser -</strong> A small explanation can be provided along with the answer. As such, the context can be rephrased to a small text with a specified amount of sentences</li>
+</ul>
 
-  </picture>
+<h2 id="dataset">Dataset</h2>
 
-</figure>
+<p><a href="https://huggingface.co/datasets/scientific_papers" rel="external nofollow noopener" target="_blank">Pubmed Scientific Dataset</a> - I used this database. It has 119k samples on medical topics</p>
 
-        <div class="card-body">
-          <h2 class="card-title text-lowercase">Simple Scientific Q&amp;A Chatbot</h2>
-          <p class="card-text">A powerful tool designed to navigate the vast world of scientific literature and provide concise and accurate answers to your science-related questions.</p>
-          <div class="row ml-1 mr-1 p-0">
-          </div>
-        </div>
-      </div>
-    </a>
-</div>
-  </div>
-  <h2 class="category">fun</h2>
-  <!-- Generate cards for each project -->
-  <div class="grid">
-  </div>
-</div>
+<h2 id="improvements">Improvements</h2>
+
+<p>Several improvements can be made to make the system more useable</p>
+
+<ul>
+  <li>Extract scientific conversation from the <a href="https://huggingface.co/datasets/stanfordnlp/SHP" rel="external nofollow noopener" target="_blank">Stanford SHP dataset</a> and fine-tune the whole system using RLHF. This will make answers more humanly</li>
+  <li>Using the same backbone model for encoding documents, summarization, and answer inference. This will result in a massive memory footprint reduction</li>
+  <li>A context might be long and answer generation inference can take longer time. Such an operation can be minimized using chunked search. I have applied that already, but the performance is not that great. With the right hyperparameter (window size) search, inference can be boosted.</li>
+</ul>
+
+<h2 id="hyperparameters">Hyperparameters</h2>
+
+<p>Please change the attributes in <a href="https://github.com/leobitz/sci-bot/blob/main/botconfig.yaml" rel="external nofollow noopener" target="_blank">YAML Config</a></p>
+
+<ul>
+  <li>
+    <p><strong>corpus_file</strong>: pubmed-dataset/pubmed-dataset/train.txt</p>
+  </li>
+  <li>
+    <p><strong>max_corpus_samples</strong>:  maximum samples of the corpus. if -1, then all samples will be taken. (Default: -1)</p>
+  </li>
+  <li>
+<strong>doc2vec_window_size</strong>: a chunk will have 256 tokens. This is used to create the document encoding if <strong>topic_search</strong> is not activated. (Default: 256)</li>
+  <li>
+<strong>doc2vec_stride_size</strong>: a window will slide with stride. (Default: 128)</li>
+  <li>
+<strong>include_explanation</strong>: Boolean value whether the model should  explain the answer or not. (Default: True)</li>
+  <li>
+<strong>rephrase_explanation</strong>: Boolean value whether the model should rephrase the explanation or give me raw context or not. (Default: True)</li>
+  <li>
+<strong>num_explanation_sentence</strong>: maximum number sentences for explanation. (Default: 2)</li>
+  <li>
+<strong>answer_score_threshold</strong>: confidence level for the model about the answer. if model’s confidence is more than this value, it will answer it. If not, then it will reply <em>Sorry, I don’t know</em>. (Default: 0.5)</li>
+  <li>
+<strong>topic_search</strong>: Use hierarchical instead of linear search (Default: True)</li>
+</ul>
 
           </article>
 
