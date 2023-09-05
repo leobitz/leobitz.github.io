@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Simple Scientific Q&A Chatbot
+title: Scientific Q&A Chatbot
 description: A powerful tool designed to navigate the vast world of scientific literature and provide concise and accurate answers to your science-related questions.
 img: assets/img/chatbot.jpg
 importance: 1
