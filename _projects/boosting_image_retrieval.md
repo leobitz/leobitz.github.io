@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Boosting image retrieval with accurately labeled small data
+title: Boosting image retrieval with accurately labelled small data
 description: The project investigates how multi-labeling images with detailed information would boost representation in an image retrieval task, thereby lowering the compute cost significantly.
 img: assets/img/proj-boosting.png
 importance: 1
