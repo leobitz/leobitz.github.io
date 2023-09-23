@@ -1,6 +1,6 @@
 ---
 layout: page
-title: DistillEmb - DynamicViT - Making Vision Transformer faster through layer skipping
+title: Making Vision Transformer faster through layer skipping
 description: A layer-skipping dynamic vision transformer (ViT) network that skips layers for each sample based on decisions given by a reinforcement learning agent
 img: assets/img/scheme.png
 importance: 1

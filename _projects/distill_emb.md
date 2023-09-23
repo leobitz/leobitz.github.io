@@ -1,6 +1,6 @@
 ---
 layout: page
-title: DistillEmb - Distilling Word Embeddings via Contrastive Learning
+title: Distilling Word Embeddings via Contrastive Learning
 description: A method to distill or compress word embeddings into a four-layer CNN.
 img: assets/img/distill-emb.png
 importance: 1
