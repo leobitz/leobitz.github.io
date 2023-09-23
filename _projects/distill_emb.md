@@ -26,5 +26,5 @@ These problems become even more challenging in morphologically complex languages
 
 **Result:** We tested the method on a variety of tasks and languages. Amharic, Tigrigna, 10 African languages and a cross-linguality test were made. Overall, it achieved a 7% accuracy over the previous method and beat a 97M parameter model despite being less than 3M. 
 
-Full Report: ![https://leobitz.github.io/assets/pdf/distill-emb.pdf](pdf)
+Full Report: ![PDF](https://leobitz.github.io/assets/pdf/distill-emb.pdf)
 Code: ![https://github.com/leobitz/DistillEmb](https://github.com/leobitz/DistillEmb)
