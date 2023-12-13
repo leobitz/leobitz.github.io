@@ -27,5 +27,5 @@ This work represents a significant advancement in overcoming the challenges pose
     </div>
 </div>
 
-Full Report: ![PDF](https://leobitz.github.io/assets/pdf/distill-emb.pdf)
-Code: ![https://github.com/leobitz/DistillEmb](https://github.com/leobitz/DistillEmb)
+Full Report: [PDF](https://leobitz.github.io/assets/pdf/distill-emb.pdf)
+Code: [https://github.com/leobitz/DistillEmb](https://github.com/leobitz/DistillEmb)

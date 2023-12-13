@@ -30,5 +30,5 @@ DynamicViT presents a promising solution to the computational challenges faced b
 
 
 
-Full Report: ![PDF](https://drive.google.com/file/d/1HURVjernhAookwLChTRO8-ZiClAwgfEN/view)
-Code: ![https://github.com/leobitz/DistillEmb](https://github.com/leobitz/DistillEmb)
+Full Report: [PDF](https://drive.google.com/file/d/1HURVjernhAookwLChTRO8-ZiClAwgfEN/view)
+Code: [https://github.com/leobitz/DistillEmb](https://github.com/leobitz/DistillEmb)
