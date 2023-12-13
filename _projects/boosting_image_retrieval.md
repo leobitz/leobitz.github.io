@@ -9,7 +9,7 @@ category: work
 
 **Abstract:** Image retrieval is an application of computer vision that, given an image, a system returns a set of images with similar content. Through the advancement of deep learning in recent years, image retrieval has gotten a significant boost in performance. However, such success is apparent through training deep models using massive amounts of data, incurring significant costs on compute and labeling. Several works investigated if feature vectors extracted from deep models can be used for image retrieval tasks, while others fine-tuned the deep models for better performance. In this work, we examine if detailed annotation of small sets of images can be used to induce more semantic information into the feature vectors through a simple shallow network with just 3k training data. We show that this simple technique can improve the richness of feature vectors extracted both from shallow models such as PCA and deep models such as ResNet and Vision Transformer. 
 
-## Full Paper: [https://github.com/leobitz/boosting_image_retrieval/blob/main/paper.pdf](https://github.com/leobitz/boosting_image_retrieval/blob/main/paper.pdf)
+#### Full Paper: [https://github.com/leobitz/boosting_image_retrieval/blob/main/paper.pdf](https://github.com/leobitz/boosting_image_retrieval/blob/main/paper.pdf)
 
 Typically, the representation of an image might be extracted from a deep learning model such as ResNet-18, ResNet-50, or ViT-B/16. This representation's quality mostly depends on the model size and the data it was trained on. Such representation embedding is extracted from the last layer (input to the classifier) of an image and using KNN or other techniques can be used to search for images that are similar to the current one.
 
