@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Scientific Q&A Chatbot
-description: A chatbot built on Retrieval Augmented Generation (RAG) technology swiftly generates answers to questions by scanning vast collections of scientific papers for relevant evidence.
+description: A chatbot built using Retrieval Augmented Generation (RAG) that instantly generates answers to questions by scanning large collections of scientific papers.
 img: assets/img/chatbot.jpg
 importance: 1
 category: work
