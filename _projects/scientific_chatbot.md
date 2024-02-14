@@ -1,13 +1,18 @@
 ---
 layout: page
 title: Scientific Q&A Chatbot
-description: A powerful tool designed to navigate the vast world of scientific literature and provide concise and accurate answers to your science-related questions.
+description: A chatbot built on Retrieval Augmented Generation (RAG) technology swiftly generates answers to questions by scanning vast collections of scientific papers for relevant evidence.
 img: assets/img/chatbot.jpg
 importance: 1
 category: work
 ---
 
-**Abstract:** A powerful tool designed to navigate the vast world of scientific literature and provide concise and accurate answers to your science-related questions. This chatbot is equipped with  a document summarizer, a fast retrieval mechanism, question answerer, and a context rephrasing model. With access to the extensive Pubmed Scientific Dataset and the potential for future fine-tuning on real scientific conversations, this chatbot is a valuable resource for anyone seeking scientific knowledge. Its adaptable hyperparameters allow for customization to suit your specific needs, whether you want detailed explanations or quick answers. 
+**Abstract:** When responding to queries in chatbots, accurately referencing the appropriate contexts or evidence is crucial for providing reliable information. Retrieval Augmented Generation facilitates this by allowing the system to search through vast collections of documents. This project aims to demonstrate such capabilities and comprises five main components: a document encoder, embedding search, question answerer, query encoder, and rephraser. First, each document is transformed into embeddings, either through summarization or by aggregating chunks of text. Subsequently, a query encoder converts the question into embeddings, which are then used to search for relevant documents using the embedding search module. Once the relevant documents are identified, they are summarized to generate the appropriate answer, which is then returned to the user. While linear search can be utilized for embedding search, it is time-consuming. Therefore, clustering techniques are employed to expedite the process. In practical applications, a vector database can be utilized to further optimize performance. Overall, this project serves as a demonstration of how to construct an effective Retrieval Augmented Generation-based search system.
+
+
+
+
+
 
 Demo: [Jupyter Notebok](https://github.com/leobitz/science-chatbot/blob/main/demo.ipynb)
 Project: [Github Link](https://github.com/leobitz/science-chatbot.git)
