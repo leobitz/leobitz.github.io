@@ -28,9 +28,18 @@
 - title: Work Experience
   type: time_table
   contents:
+    - title: Machine Learning Engineer  
+      institution: BitzBrain Research
+      year: July 2023 - Present
+      description:
+        - Reproduced papers and conducted NLP research on low-resource multilingual datasets.
+        - Implemented image and text retrieval systems with a multimodal language model, and vector databases.
+        - Significantly reduced training and deploying cost of language models through innovative techniques.
+
+
     - title: Software Engineer
-      institution: Bisrate Gabriel International School
-      year: Sept 2021 - Present
+      institution: Lumos Technologies
+      year: Sept 2021 - Sept 2023
       description:
         - Lead a development team
         - Design System Architecture
@@ -41,16 +50,21 @@
       description:
         - Teach courses - Intro to AI, Intro to Algorithm and Data Structure.
         - Develop software products for the university 
+        - Conduct AI/ML Research
 
-    - title: Founder
+    - title: Founder & Developer
       institution: Sefere App
-      year: Sept 2021 - Present
+      year: Sept 2021 - Sept 2023
+      description:
+        - Launched a startup intending to boost the visibility of small businesses through mobile and web apps.
+        - Implemented a self-improving content-based recommendation and feed ranking system using various ML algorithms.
 
-    - title: RoboCup Developer
-      institution: Addis Ababa University
-      year: Apr 2017 - Sept 2018
+    - title: Computer Vision and Robotics Engineer       
+      institution: 4Kbots AI and Robotics Lab 
+      year: Jan 2017 - Sept 2018
       description:
         - Built a ROS-based RoboCup Platform
+        - Implemented SLAM and Object Detection algorithms
 
 
 - title: Research Experience
