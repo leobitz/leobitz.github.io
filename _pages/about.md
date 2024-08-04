@@ -23,7 +23,7 @@ I recently graduated with a Master of Science in Artificial Intelligence from Ad
 My research interest includes: 
 
 - Efficient Deep Neural Networks
-- RL based meta-learning for deep leaning models
+- Deep Learning Theory
 - Out of distribution generalization
 
 <!-- -  -->
